@@ -18,7 +18,7 @@ class ApplicationController < Sinatra::Base
 
   post "/signup" do
     #your code here
-    raise params.inspect
+  
     if params[:username] && params[:password]
       user = User.new(:username => params[:username], :password => params[:password])
     else
